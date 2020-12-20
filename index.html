@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Body Building Workout</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="Shoulders" data-nav="Shoulders" class="active">
+      <div class="landing__container">
+        <h2>Shoulders</h2>
+        <p> According to Hyde, standing barbell presses should be a staple of every lifter's shoulder routine. "They require upper back and rear-delt stabilization, core activation, and strong legs. EMG research suggests that, compared to a seated dumbbell press, during a standing barbell press, there's significantly greater muscle activation of both the middle and front delts during a standing barbell press.[1] This is extremely important since these are the two primary muscles that really create cannonball, capped delts.</p>
+
+        <p>n Your Training: "This should be one of your primary presses on either shoulder or push day," says Hyde. "If you wait too long in your workout to get it in, you'll be too fatigued to really train your delts with the intensity they need. While delts can usually be trained in a slightly higher rep range, this movement should be done similar to a bench press. Vary the reps from strength (three reps per set) to hypertrophy (8-12 reps per set)</p>
+      </div>
+    </section>
+    <section id="Quads" data-nav="Quads" >
+      <div class="landing__container">
+        <h2>Quads</h2>
+        <p>Why It's Number 1: "Front squats top the list for a couple of reasons," says Hyde. "Despite the location of the bar, the majority of the load and force should be located about midfoot. Bar positioning during a front squat is held high on the anterior delts and there's minimal change in back angle, which allows for more recruitment and activation of the quads [than other kinds of squats]. Bar positioning during a back squat will force the hips to travel farther backward, shifting a greater tension toward the hip extensors (glutes)."</p>
+
+        <p>Since quad exercises are more prone to putting added stress on the knee, Hyde also points out that front squats exhibit a lesser shearing and compressive force across the knee joint.[2] This makes them a knee-friendly squat variation.
+
+          In Your Training: "Use the front squat as a primary movement for a quad-focused leg workout," says Hyde. "Not only does this exercise require leg strength, it also requires a strong upper back and core. If you lack flexibility, it's okay to either cross your arms over the bar or use lifting straps to hold the bar in a pseudo front-rack position."</p>
+      </div>
+    </section>
+    <section id="Chest" data-nav="Chest">
+      <div class="landing__container">
+        <h2>Chest</h2>
+        <p>Why It's Number 1: Here's where you start on chest day, at least most of the time. "With a bar, you get the most power and therefore can press the most weight," says Hyde. "The bar is also easier to control than dumbbells. Several EMG studies have concluded that not only does the barbell bench press activate the pecs to a greater degree than incline presses, decline presses, and flyes, but it's also superior for targeting the triceps brachii."[3,4]</p>
+
+        <p>In Your Training: Put the bench press at the front of your workout for heavy sets in lower rep ranges. Your grip width impacts the amount of bar you can move. Research suggests a grip in which your forearms are 90 degrees to the floor (completely perpendicular) when the bar is in the down position.</p>
+      </div>
+    </section>
+    <section id="Back" data-nav="Back">
+      <div class="landing__container">
+        <h2>Back</h2>
+        <p>Why It's Number 1: "EMG studies clearly show that bent-over rows hammer the entire back evenly," says Hyde. "This exercise exhibits significant increases in muscle activation across the back, with equal contributions from the lower back and lower and upper lats.[6] When handling very heavy loads, make sure your lower back doesn't round when pulling, which can increase stress on the lumbar discs."</p>
+
+        <p>"Bent-over rows are my absolute favorite exercise for building a big back, and the main movement I attribute my back development to," says Team iSatori athlete Nick Wright. "I alternate between an underhand grip and an overhand grip, each of which is slightly different. The overhand grip reduces biceps activation, and I've found there are a number of ways in which it can be done.</p>
+      </div>
+    </section>
+
+<button id="up_btn"><i class="fa fa-arrow-up"></i></button>
+    
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
