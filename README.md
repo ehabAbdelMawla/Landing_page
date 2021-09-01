@@ -1,7 +1,5 @@
 # Landing Page Project
-## Live Demo:
-- https://ehababdelmawla.github.io/Landing_page
-
+## <a href="https://ehababdelmawla.github.io/Landing_page">Live Demo</a>
 
 ## Table of Contents
 
